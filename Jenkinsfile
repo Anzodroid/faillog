@@ -19,8 +19,23 @@ pipeline {
                 //echo "Hello PowerShell"
                 //'''
             }
+            
+        stage('Run Python Script') {
+            steps {
+                timeout(time: 1, unit: 'MINUTES'){
+                sh '''
+                python faillog.py -a test.txt
+                '''
+                }
+                
+                // powershell '''
+                //echo "Hello PowerShell"
+                //'''
+            }
 
         
         }
+        
+        
     }
 }
