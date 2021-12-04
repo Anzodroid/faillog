@@ -14,11 +14,9 @@ pipeline {
                 echo "Hello Shell"
                 '''
                 }
-                
-                // powershell '''
-                //echo "Hello PowerShell"
-                //'''
             }
+        }
+
             
         stage('Run Python Script') {
             steps {
@@ -28,11 +26,10 @@ pipeline {
                 '''
                 }
                 
-                // powershell '''
-                //echo "Hello PowerShell"
-                //'''
             }
 
+        }
+        
         
         }
         
