@@ -22,7 +22,7 @@ pipeline {
             steps {
                 timeout(time: 1, unit: 'MINUTES'){
                 sh '''
-                python faillog.py -a test.txt
+                python3 faillog.py -a test.txt
                 '''
                 }
                 
